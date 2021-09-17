@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+  <div class="row">
+    <div class="col s12 m6">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title car"></span>
+          <p>Make: <span class="make"></span></p>
+          <p>Model: <span class="model"></span></p>
+          <p>Description: <span class="description"></span></p>
+          <p>Fuel type: <span class="fuel-type"></span></p>
+          <p>Trim level: <span class="trim-level"></span></p>
+          <p>Gear box: <span class="gear-box"></span></p>
+          <p>Car option: <span class="car-option"></span></p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s12 m6">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">Garage</span>
+          <p>Name: <span class="name"></span></p>
+          <p>Email: <span class="email"></span></p>
+          <p>Owner: <span class="owner"></span></p>
+        </div>
+        <div class="card-action">
+          <a href="#" class="edit">Edit</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <form class="edit-form">
+    <div class="input-field">
+        <input id="name" name="name" type="text" class="validate" required>
+        <label for="name">New name</label>
+        <span class="helper-text" data-error="Введите новое название"></span>
+    </div>
+    <div class="input-field">
+      <input id="email" name="email" type="text" class="validate" required>
+      <label for="email">New email</label>
+      <span class="helper-text" data-error="Введите новый email"></span>
+    </div>
+    <div class="input-field">
+      <input id="owner" name="owner" type="text" class="validate" required>
+      <label for="owner">New owner</label>
+      <span class="helper-text" data-error="Введите нового владельца"></span>
+    </div>
+    <button class="confirm btn btn-primary">Confirm</button>
+  </form>
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="/app.js"></script>
+  <script src="/index.js"></script>
+</body>
+</html>

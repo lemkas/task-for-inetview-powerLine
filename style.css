@@ -1,0 +1,15 @@
+.edit-form {
+  display: none;
+  width: 400px;
+  margin-left: 180px;
+  padding-bottom: 50px;
+}
+
+.card {
+  width: 400px;
+  margin: 0 auto;
+}
+
+span {
+  font-weight: bold;
+}

@@ -8,6 +8,7 @@ const emailField = document.querySelector(".email");
 const ownerField = document.querySelector(".owner");
 
 editBtn.addEventListener("click", showEditForm);
+confirmBtn.addEventListener("click", edit);
 
 http
   .get(url)
@@ -61,3 +62,15 @@ function showEditForm(e) {
 }
 
 // функция редактирования
+function edit(e) {
+  const newName = document.querySelector("#name").value;
+  const newEmail = document.querySelector("#email").value;
+  const newOwner = document.querySelector("#owner").value;
+
+  nameField.innerHTML = newName;
+  emailField.innerHTML = newEmail;
+  ownerField.innerHTML = newOwner;
+
+  form.style.display = "none";
+  e.preventDefault();
+}
